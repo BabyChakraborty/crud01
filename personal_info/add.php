@@ -2,7 +2,7 @@
 <?php
 $link = mysqli_connect("localhost",
     "root",
-    "baby12",
+    "lict@2",
     "ftflbatch2");
 
 $query="INSERT INTO `ftflbatch2`.`personal_info` (
