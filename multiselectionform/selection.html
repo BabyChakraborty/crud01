@@ -1,0 +1,55 @@
+<h4>Multiselection Information</h4>
+<hr>
+
+<form action="add.php" method="post">
+
+    <label>Full Name</label><span>*</span>
+    <input type="text" name="fname" /><br>
+
+
+    <label>Hobby</label><span>*</span><br>
+    <input type="checkbox" name="h_tra" value="Traveling"> Traveling<br>
+    <input type="checkbox" name="h_sin" value="Singing"> Singing<br>
+    <input type="checkbox" name="h_gar" value="Gardening"> Gardening<br>
+    <input type="checkbox" name="h_rea" value="Reading"> Reading<br>
+
+    <label>Prefered Job Location:</label>
+    <select name="location[]" multiple="multiple">
+        <option> - location - </option>
+        <option value="Dhaka">Dhaka</option>
+        <option value="Chittagong">Chittagong</option>
+        <option value="Comilla">Comilla</option>
+        <option value="Jessore">Jessore</option>
+        <option value="Mymensing">Mymensing</option>
+        <option value="Bogura">Bogura</option>
+        <option value="Khulna">Khulna</option>
+        <option value="Coxbajar">Coxbajar</option>
+        <option value="Rangamati">Rangamati</option>
+        <option value="Teknaf">Teknaf</option>
+        <option value="Natore">Natore</option>
+        <option value="Barisal">Barisal</option>
+        <option value="Savar">Savar</option>
+        <option value="Narangong">Narangong</option>
+        <option value="B.Baria">B.Baria</option>
+        <option value="Potuakhali">Potuakhali</option>
+        <option value="Noakhali">Noakhali</option>
+        <option value="Khustia">Khustia</option>
+        <br>
+    </select>
+    <br>
+<br>
+
+    <label>Food</label><span>*</span>
+    <input type="checkbox" name="food[]" value="chicken">chicken<br>
+    <input type="checkbox" name="food[]" value="hotchicken"> hotchicken<br>
+    <input type="checkbox" name="food[]" value="biriani"> biriani<br>
+    <input type="checkbox" name="food[]" value="salad"> salad<br>
+
+    <input type ="hidden" name = "created">
+    <br>
+    <input type ="hidden" name = "modified">
+
+    <button type = "submit" name = "submit">Save</button>
+</form>
+<a href="list.php">Go to List</a>
+
